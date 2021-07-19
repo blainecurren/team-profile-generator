@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-const generate = require("./dist/index.html");
+const generatePage = require("./dist/index.html");
 
 const team = [];
 
@@ -164,10 +164,10 @@ addEmployee = () => {
 //   });
 // };
 
-fs.writeFile("./dist/index.html", pageHTML, (err) => {
-  if (err) throw err;
+// fs.writeFile("./dist/index.html", pageHTML, (err) => {
+//   if (err) throw err;
 
-  console.log("Portfolio complete! Check out index.html to see the output!");
-});
+//   console.log("Portfolio complete! Check out index.html to see the output!");
+// });
 
 init();
